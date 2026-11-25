@@ -76,7 +76,7 @@ Redacta un dictamen breve en Markdown:
             # Detectar automáticamente un modelo de chat activo en tu cuenta de Groq
             modelos_disponibles = [
                 m.id for m in client.models.list().data
-                if not any(palabra in m.id.lower() for palabra in ["whisper", "guard", "tts", "playai", "embed"])
+                if not any(palabra in m.id.lower() for palabra in ["whisper", "guard", "tts", "playai", "embed", "orpheus"])
             ]
 
             if not modelos_disponibles:
